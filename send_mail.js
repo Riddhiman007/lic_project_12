@@ -30,7 +30,7 @@ const { schedule, ScheduledTask } = require("node-cron")
  * 
  * @example <caption>Another example</caption>
  * console.log("mail sent after 5 sec")
- * const job = schedule_mail("* * 5 * *", "smtp://username:password@smtp.mailer.com:port", { to: "receiver", text: "test smtp", html: "custom html to use" })
+ * const job = schedule_mail("5 * * * * *", "smtp://username:password@smtp.mailer.com:port", { to: "receiver", text: "test smtp", html: "custom html to use" })
  * job.start()
  * console.log("sent message successfully.")
 */
